@@ -5,15 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="./assets/bugTracker.css" rel="stylesheet" type="text/css">
-<title>Bug Tracker</title><!--Needs a favicon (whitebug.png)-->
+<title>Bug Tracker</title>
 </head>
 <body>
     <div id="main_container">
     <div id="popUp">        <!--PopUp Section-->
             <div id="popTitle">This Here Is A Title</div>
             <div id="selectorContainer">
-                
-                
                 <div class="issueDropdownContainer">
                     <div class="dueDate">
                         <h6>due date</h6>
@@ -38,20 +36,6 @@
                             <option value="High">High</option>
                         </select>
                     </div>
-                   <!-- Was thinking about... Maybe might keep... 
-                    <form class="drop">
-                        <label for="Links">Broken Link
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="Links" value="Links"></label>
-
-                        <label for="Bug">Bug
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="Bug" value="Bug" checked></label>
-
-                        <label for="frontEnd">Front-End Issue
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="frontEnd" value="frontEnd"></label>
-                        
-                        <label for="backEnd">Back-End Issue
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="backEnd" value="backEnd"></label>
-                    </form>-->
                 </div>
             </div>
             <br>
@@ -59,7 +43,10 @@
                 <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
             </div>
             <br>
-            <div id="smallPic"><h3 style="font-size: medium;">assigned by</h3><img src="./assets/images/propic.png" alt="profile picture" width="50px"/></div>
+            <div id="smallPic">
+                <h3 style="font-size: medium;">assigned by</h3>
+                <img src="./assets/images/propic.png" alt="profile picture" width="50px"/>
+            </div>
             <button id="deleteBtn" onclick="cls()">Delete</button>
             <button id="submitBtn" onclick="newEntry()">Submit</button>
             
@@ -68,7 +55,7 @@
         <div id="nav">          <!--Nav Section-->
             <div id="burger">=</div>
             <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px"/>
-                Bug Tracker</h1><!-- Pic needs a variable -->
+                Bug Tracker</h1>
             <div id="profilePic"><img src="./assets/images/propic.png" alt="profile picture" width="50px"/></div>
 
         </div>
