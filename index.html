@@ -9,17 +9,19 @@
 </head>
 <body>
     <div id="main_container">
-    <div id="popUp">        <!--PopUp Section-->
-            <div id="popTitle">This Here Is A Title</div>
+      
+    <!--PopUp Section-->
+    <div id="popUp">        
+            <div id="popTitle">
+              This Here Is A Title
+            </div>
             <div id="selectorContainer">
-                
-                
                 <div class="issueDropdownContainer">
                     <div class="dueDate">
                         <h6>due date</h6>
                         <button>calendar date</button>
-                    
                     </div>
+
                     <div id="issueDiv">
                         <h6>issue type</h6>
                         <select id="issueTypeSelector">
@@ -28,8 +30,8 @@
                             <option value="Front-End">Front-End Issue</option>
                             <option value="Back-End">Back-End Issue</option>
                         </select>
-
                     </div>
+
                     <div id="priorityDiv">
                         <h6>priority</h6>
                         <select id="prioritySelector">
@@ -38,54 +40,52 @@
                             <option value="High">High</option>
                         </select>
                     </div>
-                   <!-- Was thinking about... Maybe might keep... 
-                    <form class="drop">
-                        <label for="Links">Broken Link
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="Links" value="Links"></label>
-
-                        <label for="Bug">Bug
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="Bug" value="Bug" checked></label>
-
-                        <label for="frontEnd">Front-End Issue
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="frontEnd" value="frontEnd"></label>
-                        
-                        <label for="backEnd">Back-End Issue
-                        <input type="radio" name="Links-Bug-frontEnd-backEnd" id="backEnd" value="backEnd"></label>
-                    </form>-->
+                    
                 </div>
             </div>
+
             <br>
-            <div>
                 <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
-            </div>
             <br>
-            <div id="smallPic"><h3 style="font-size: medium;">assigned by</h3><img src="./assets/images/propic.png" alt="profile picture" width="50px"/></div>
+
+            <div id="smallPic">
+              <h3 style="font-size: medium;">assigned by</h3>
+              <img src="./assets/images/propic.png" alt="profile picture" width="50px"/>
+            </div>
+
             <button id="deleteBtn" onclick="cls()">Delete</button>
             <button id="submitBtn" onclick="newEntry()">Submit</button>
             
     </div>
 
-        <div id="nav">          <!--Nav Section-->
+        <!--Nav Section-->
+        <div id="nav">          
             <div id="burger">=</div>
             <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px"/>
                 Bug Tracker</h1><!-- Pic needs a variable -->
             <div id="profilePic"><img src="./assets/images/propic.png" alt="profile picture" width="50px"/></div>
 
         </div>
-        <div class="entrySection">    <!--Entry Section-->
+        
+        <!--Entry Section-->
+        <div class="entrySection">    
             <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
             <br/>
             <button id="entryBtn" onclick="pop()">+ ADD</button>
 
         </div>
-        <div class="otherLinks">      <!--PageLinks Section-->
+        
+        <!--PageLinks Section-->
+        <div class="otherLinks">      
             <li><a href="#">Charts</a></li>
             <li><a href="#">Timelines</a></li>
             <li><a href="#">Tasks</a></li>
             <li><a href="#">Analytics</a></li>
 
         </div>
-        <div class="logContainer">    <!--DataTable Section-->
+        
+        <!--DataTable Section-->
+        <div class="logContainer">    
             <table id="logEntryContainer">
                 <tr id="titleBar">
                     <th>Title</th>
@@ -99,16 +99,18 @@
                     <th>Progress</th>
 
                 </tr>
-                <tr id="entry" class="new-call">       <!--Added Entries Section-->
-                    <td><div id="title" ></div></td>
-                    <td><div id="status" ><button class="status"></button></div></td>
-                    <td><div id="issue" ></div></td>
-                    <td><div id="assigned" ></div></td>
-                    <td><div id="startTime" ></div></td>
-                    <td><div id="dueDate" ></div></td>
-                    <td><div id="priority" ><button class="priority"></button></div></td>
-                    <td><div id="timer" ></div></td>
-                    <td><div id="progress" ></div></td>
+                
+                <!--Added Entries Section-->
+                <tr id="entry" class="new-call">
+                    <td><div id="title" >placeholder</div></td>
+                    <td><div id="status" ><button class="status">status</button></div></td>
+                    <td><div id="issue" >placeholder</div></td>
+                    <td><div id="assigned" >placeholder</div></td>
+                    <td><div id="startTime" >13:23</div></td>
+                    <td><div id="dueDate" >11/17/21</div></td>
+                    <td><div id="priority" ><button class="priority">status</button></div></td>
+                    <td><div id="timer" >00:00:00:00</div></td>
+                    <td><div id="progress" >placeholder</div></td>
 
                 </tr>                  
             </table>
