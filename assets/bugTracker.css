@@ -118,13 +118,7 @@ a {
     width: 95%;
     height: auto;
     background-color: white;
-}
-#logEntryContainer{
-    display: flex;
-    width: 100%;
     overflow-x: scroll;
-    border-collapse: collapse;
-/*needs a cleanup*/
 }
 #titleBar {
     height: 1.7em;
@@ -244,7 +238,7 @@ textarea{
 }
 
                             /* Media Quieries */
-@media screen and (min-width:768px){
+@media screen and (min-width:1014px){
     nav {
         display: block;
     }
@@ -254,8 +248,7 @@ textarea{
     #profilePic {
         width: 10%;
     }
-    #logEntryContainer {
+    .logContainer {
         overflow-x: hidden;
-        width:max-content;
     }
 }
