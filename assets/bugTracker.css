@@ -113,12 +113,16 @@ a {
     color: rgb(65, 198, 87);
 }
 .logContainer {
+    display: flex;
     margin: 0 auto;
     padding: 0;
     width: 95%;
     height: auto;
     background-color: white;
     overflow-x: scroll;
+}
+#logEntryContainer {
+    width: 100%;
 }
 #titleBar {
     height: 1.7em;
