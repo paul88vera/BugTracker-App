@@ -120,9 +120,9 @@ a {
     background-color: white;
 }
 #logEntryContainer{
+    display: flex;
     width: 100%;
     overflow-x: scroll;
-    /*min-width: 1323px;*/
     border-collapse: collapse;
 /*needs a cleanup*/
 }
@@ -253,5 +253,9 @@ textarea{
     }
     #profilePic {
         width: 10%;
+    }
+    #logEntryContainer {
+        overflow-x: hidden;
+        width:max-content;
     }
 }
