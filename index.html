@@ -11,15 +11,19 @@
 
 <body>
   <div id="main_container">
+
+    <!--PopUp Section-->
     <div id="popUp">
-      <!--PopUp Section-->
-      <div id="popTitle">This Here Is A Title</div>
+      <div id="popTitle">
+        This Here Is A Title
+      </div>
       <div id="selectorContainer">
         <div class="issueDropdownContainer">
           <div class="dueDate">
             <h6>due date</h6>
             <button>calendar date</button>
           </div>
+
           <div id="issueDiv">
             <h6>issue type</h6>
             <select id="issueTypeSelector">
@@ -29,6 +33,7 @@
               <option value="Back-End">Back-End Issue</option>
             </select>
           </div>
+
           <div id="priorityDiv">
             <h6>priority</h6>
             <select id="prioritySelector">
@@ -37,45 +42,51 @@
               <option value="High">High</option>
             </select>
           </div>
+
         </div>
       </div>
+
       <br>
-      <div>
-        <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
-      </div>
+      <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
       <br>
+
       <div id="smallPic">
         <h3 style="font-size: medium;">assigned by</h3>
         <img src="./assets/images/propic.png" alt="profile picture" width="50px" />
       </div>
+
       <button id="deleteBtn" onclick="cls()">Delete</button>
       <button id="submitBtn" onclick="newEntry()">Submit</button>
+
     </div>
 
-    <div id="nav">
-      <!--Nav Section-->
-      <div id="burger">=</div>
-      <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px" />Bug Tracker</h1>
+    <!--Nav Section-->
+    <nav>
+      <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px" />
+        Bug Tracker</h1><!-- Pic needs a variable -->
       <div id="profilePic"><img src="./assets/images/propic.png" alt="profile picture" width="50px" /></div>
-    </div>
+    </nav>
 
-    <div class="entrySection">
-      <!--Entry Section-->
-      <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
-      <br />
-      <button id="entryBtn" onclick="pop()">+ ADD</button>
-    </div>
+    <!--Entry Section-->
+    <section class="entrySection">
+      <div id="title-container">
+        <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
+        <br />
+        <button id="entryBtn" onclick="pop()">+ ADD</button>
+      </div>
+    </section>
 
-    <div class="otherLinks">
-      <!--PageLinks Section-->
+    <!--PageLinks Section-->
+    <section class="otherLinks">
       <li><a href="#">Charts</a></li>
       <li><a href="#">Timelines</a></li>
       <li><a href="#">Tasks</a></li>
       <li><a href="#">Analytics</a></li>
-    </div>
 
-    <div class="logContainer">
-      <!--DataTable Section-->
+    </section>
+
+    <!--DataTable Section-->
+    <section class="logContainer">
       <table id="logEntryContainer">
         <tr id="titleBar">
           <th>Title</th>
@@ -87,40 +98,42 @@
           <th>Priority</th>
           <th>Hours On</th>
           <th>Progress</th>
+
         </tr>
 
+        <!--Added Entries Section-->
         <tr id="entry" class="new-call">
-          <!--Added Entries Section-->
           <td>
-            <div id="title"></div>
+            <div id="title">placeholder</div>
           </td>
           <td>
-            <div id="status"><button class="status"></button></div>
+            <div id="status"><button class="status">status</button></div>
           </td>
           <td>
-            <div id="issue"></div>
+            <div id="issue">placeholder</div>
           </td>
           <td>
-            <div id="assigned"></div>
+            <div id="assigned">placeholder</div>
           </td>
           <td>
-            <div id="startTime"></div>
+            <div id="startTime">13:23</div>
           </td>
           <td>
-            <div id="dueDate"></div>
+            <div id="dueDate">11/17/21</div>
           </td>
           <td>
-            <div id="priority"><button class="priority"></button></div>
+            <div id="priority"><button class="priority">status</button></div>
           </td>
           <td>
-            <div id="timer"></div>
+            <div id="timer">00:00:00:00</div>
           </td>
           <td>
-            <div id="progress"></div>
+            <div id="progress">placeholder</div>
           </td>
+
         </tr>
       </table>
-    </div>
+    </section>
   </div>
   <script src="./assets/bugTracker.js"></script>
 </body>
