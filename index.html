@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="./assets/bugTracker.css" rel="stylesheet" type="text/css">
-<title>Bug Tracker</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/bugTracker.css" rel="stylesheet" type="text/css">
+  <title>Bug Tracker</title>
 </head>
+
 <body>
   <div id="main_container">
-  <div id="popUp">        <!--PopUp Section-->
-    <div id="popTitle">This Here Is A Title</div>
+    <div id="popUp">
+      <!--PopUp Section-->
+      <div id="popTitle">This Here Is A Title</div>
       <div id="selectorContainer">
         <div class="issueDropdownContainer">
           <div class="dueDate">
             <h6>due date</h6>
-            <button>calendar date</button>     
+            <button>calendar date</button>
           </div>
           <div id="issueDiv">
             <h6>issue type</h6>
@@ -34,69 +37,92 @@
               <option value="High">High</option>
             </select>
           </div>
+        </div>
       </div>
-  </div>
-<br>
-  <div>
-    <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
-  </div>
-  <br>
-  <div id="smallPic">
-    <h3 style="font-size: medium;">assigned by</h3>
-    <img src="./assets/images/propic.png" alt="profile picture" width="50px"/>
-  </div>
-  <button id="deleteBtn" onclick="cls()">Delete</button>
-  <button id="submitBtn" onclick="newEntry()">Submit</button>
-  </div>
+      <br>
+      <div>
+        <textarea name="bugTracker" id="textEntry" cols="30" rows="10" placeholder="Enter Note Here ..."></textarea>
+      </div>
+      <br>
+      <div id="smallPic">
+        <h3 style="font-size: medium;">assigned by</h3>
+        <img src="./assets/images/propic.png" alt="profile picture" width="50px" />
+      </div>
+      <button id="deleteBtn" onclick="cls()">Delete</button>
+      <button id="submitBtn" onclick="newEntry()">Submit</button>
+    </div>
 
-  <div id="nav">          <!--Nav Section-->
-    <div id="burger">=</div>
-    <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px"/>Bug Tracker</h1>
-    <div id="profilePic"><img src="./assets/images/propic.png" alt="profile picture" width="50px"/></div>
-  </div>
+    <div id="nav">
+      <!--Nav Section-->
+      <div id="burger">=</div>
+      <h1 id="logo"><img src="./assets/images/white_bug.png" alt="a bug, of course." width="60px" />Bug Tracker</h1>
+      <div id="profilePic"><img src="./assets/images/propic.png" alt="profile picture" width="50px" /></div>
+    </div>
 
-  <div class="entrySection">    <!--Entry Section-->
-    <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
-    <br/>
-    <button id="entryBtn" onclick="pop()">+ ADD</button>
-  </div>
+    <div class="entrySection">
+      <!--Entry Section-->
+      <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
+      <br />
+      <button id="entryBtn" onclick="pop()">+ ADD</button>
+    </div>
 
-  <div class="otherLinks">      <!--PageLinks Section-->
-    <li><a href="#">Charts</a></li>
-    <li><a href="#">Timelines</a></li>
-    <li><a href="#">Tasks</a></li>
-    <li><a href="#">Analytics</a></li>
-  </div>
+    <div class="otherLinks">
+      <!--PageLinks Section-->
+      <li><a href="#">Charts</a></li>
+      <li><a href="#">Timelines</a></li>
+      <li><a href="#">Tasks</a></li>
+      <li><a href="#">Analytics</a></li>
+    </div>
 
-  <div class="logContainer">    <!--DataTable Section-->
-    <table id="logEntryContainer">
-      <tr id="titleBar">
-        <th>Title</th>
-        <th>Status</th>
-        <th>Issue Type</th>
-        <th>Assigned</th>
-        <th>Start Date</th>
-        <th>Due Date</th>
-        <th>Priority</th>
-        <th>Hours On</th>
-        <th>Progress</th>
-      </tr>
+    <div class="logContainer">
+      <!--DataTable Section-->
+      <table id="logEntryContainer">
+        <tr id="titleBar">
+          <th>Title</th>
+          <th>Status</th>
+          <th>Issue Type</th>
+          <th>Assigned</th>
+          <th>Start Date</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Hours On</th>
+          <th>Progress</th>
+        </tr>
 
-      <tr id="entry" class="new-call">       <!--Added Entries Section-->
-        <td><div id="title" ></div></td>
-        <td><div id="status" ><button class="status"></button></div></td>
-        <td><div id="issue" ></div></td>
-        <td><div id="assigned" ></div></td>
-        <td><div id="startTime" ></div></td>
-        <td><div id="dueDate" ></div></td>
-        <td><div id="priority" ><button class="priority"></button></div></td>
-        <td><div id="timer" ></div></td>
-        <td><div id="progress" ></div></td>
-      </tr>                  
-    </table>
+        <tr id="entry" class="new-call">
+          <!--Added Entries Section-->
+          <td>
+            <div id="title"></div>
+          </td>
+          <td>
+            <div id="status"><button class="status"></button></div>
+          </td>
+          <td>
+            <div id="issue"></div>
+          </td>
+          <td>
+            <div id="assigned"></div>
+          </td>
+          <td>
+            <div id="startTime"></div>
+          </td>
+          <td>
+            <div id="dueDate"></div>
+          </td>
+          <td>
+            <div id="priority"><button class="priority"></button></div>
+          </td>
+          <td>
+            <div id="timer"></div>
+          </td>
+          <td>
+            <div id="progress"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
-</div>
-<script src="./assets/bugTracker.js"></script>
+  <script src="./assets/bugTracker.js"></script>
 </body>
 
 </html>
