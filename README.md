@@ -17,5 +17,3 @@ https://paul88vera.github.io/BugTracker-App/
 
 ## Contribution
 Made by [Paul Vera]
-
-### ©2021 Verafied Creations
