@@ -113,18 +113,16 @@ a {
     color: rgb(65, 198, 87);
 }
 .logContainer {
+    display: flex;
     margin: 0 auto;
     padding: 0;
     width: 95%;
     height: auto;
     background-color: white;
-}
-#logEntryContainer{
-    width: 100%;
     overflow-x: scroll;
-    /*min-width: 1323px;*/
-    border-collapse: collapse;
-/*needs a cleanup*/
+}
+#logEntryContainer {
+    width: 100%;
 }
 #titleBar {
     height: 1.7em;
@@ -244,7 +242,7 @@ textarea{
 }
 
                             /* Media Quieries */
-@media screen and (min-width:768px){
+@media screen and (min-width:1014px){
     nav {
         display: block;
     }
@@ -253,5 +251,8 @@ textarea{
     }
     #profilePic {
         width: 10%;
+    }
+    .logContainer {
+        overflow-x: hidden;
     }
 }
