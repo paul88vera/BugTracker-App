@@ -77,14 +77,16 @@ a {
     font-weight: 400;
     border-radius: 2em;
     border: none;
-    text-align: center;
+    text-align: left;
     background-color: white;
     padding: 0.6em 6.3em;
+    height: 20px;
+    width: 120px;
 }
 .entrySection button {
     display: flex;
     justify-content: center;
-    padding: 0.6em 11em;
+    padding: 0.8em 9.3em;
     border-radius: 2em;
     font-size: .7em;
     font-weight: 700;
@@ -123,6 +125,7 @@ a {
 }
 #logEntryContainer {
     width: 100%;
+    border:none;
 }
 #titleBar {
     height: 1.7em;
@@ -142,6 +145,7 @@ a {
 #entry:hover{
     background-color: whitesmoke;
     cursor: grab;
+    border: none;
 }
 button.status, button.priority {
     padding: .4em 1.5em;
@@ -151,7 +155,7 @@ button.status, button.priority {
     font-size: medium;
     font-weight: 700;
 }
-                            /* PopUp container  */
+/* PopUp container  */
 #popUp{
     display:none;
     padding: 1em;
@@ -199,6 +203,36 @@ form{
     margin-bottom: .5em;
     align-items: flex-end;
 }
+#calendar {
+  text-align: center;
+}
+/* UI DATEPICKER START */
+#ui-datepicker-div {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+  border: solid 1px var(--main-blue);
+}
+.ui-corner-all {
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color:var(--main-blue);
+  color: white;
+}
+.ui-corner-all a {
+  margin: .5em ;
+  cursor: pointer;
+}
+.ui-datepicker-title {
+  margin-top: 10px;
+}
+
+.ui-datepicker-calendar td:hover, .ui-state-default:hover  {
+  background-color: var(--main-blue);
+  color:white;
+}
+/* UI DATEPICKER END */
 label{
     font-size: .7em;
     padding: 0em 1em;
@@ -221,7 +255,6 @@ textarea{
     font-size: medium;
     font-weight: 700;
     float: left;
-    color:white;
 }
 #deleteBtn:hover{
     background-color:var(--hover-red);
@@ -235,11 +268,19 @@ textarea{
     background-color: var(--green);
     font-size: medium;
     font-weight: 700;
-    color:white;
 }
 #submitBtn:hover{
     background-color: var(--hover-green);
 }
+button {
+  color: white;
+}
+
+/* NEW TABLE DATA */
+td {
+  font-size: 1rem;
+  padding: 2px;
+} 
 
                             /* Media Quieries */
 @media screen and (min-width:1014px){

@@ -21,7 +21,7 @@
         <div class="issueDropdownContainer">
           <div class="dueDate">
             <h6>due date</h6>
-            <button>calendar date</button>
+            <input type="text" id="calendar" placeholder="mm/dd/yyyy" />
           </div>
 
           <div id="issueDiv">
@@ -55,8 +55,8 @@
         <img src="./assets/images/propic.png" alt="profile picture" width="50px" />
       </div>
 
-      <button id="deleteBtn" onclick="cls()">Delete</button>
-      <button id="submitBtn" onclick="newEntry()">Submit</button>
+      <button id="deleteBtn">Delete</button>
+      <button id="submitBtn">Submit</button>
 
     </div>
 
@@ -72,7 +72,7 @@
       <div id="title-container">
         <input type="text" name="titleEntry" id="titleEntry" placeholder="Insert Issue Title">
         <br />
-        <button id="entryBtn" onclick="pop()">+ ADD</button>
+        <button id="entryBtn">+ ADD</button>
       </div>
     </section>
 
@@ -125,7 +125,7 @@
             <div id="priority"><button class="priority">status</button></div>
           </td>
           <td>
-            <div id="timer">00:00:00:00</div>
+            <div id="timer">00:00</div>
           </td>
           <td>
             <div id="progress">placeholder</div>
@@ -135,6 +135,8 @@
       </table>
     </section>
   </div>
+  <script src="./assets/lib/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script src="./assets/bugTracker.js"></script>
 </body>
 
